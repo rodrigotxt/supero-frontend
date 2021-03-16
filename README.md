@@ -1,11 +1,13 @@
 # supero-frontend
 
+### Instalação:
+
 npm install
 
 npm run watch
 
 
-Requisitos:
+### Requisitos:
 
 O usuário deve poder:
 
