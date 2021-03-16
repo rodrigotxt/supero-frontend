@@ -2,7 +2,7 @@
 	<div class="container">
 		<h3 align="center">Gerenciador de Tarefas</h3>
 		<ul class="list-group mx-auto tarefas" v-sortable="{ onUpdate: onOrderUpdate }">
-				<task-item v-for="(task,index) in tasksList.rows" :index="index" :task="task"
+				<task-item v-for="(task,index) in tasksList.rows" :index="index" :key="task.id" :task="task"
 				@update:title="onUpdate"
 				@update:status="updateStatus"
 				@remove="onRemove"

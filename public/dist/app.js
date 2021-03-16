@@ -1606,7 +1606,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(15);
-module.exports = __webpack_require__(50);
+module.exports = __webpack_require__(51);
 
 
 /***/ }),
@@ -1619,7 +1619,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Tasks_vue__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Tasks_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Tasks_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_sortablejs__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_sortablejs__ = __webpack_require__(50);
 
 
 
@@ -15241,6 +15241,7 @@ var render = function() {
       },
       _vm._l(_vm.tasksList.rows, function(task, index) {
         return _c("task-item", {
+          key: task.id,
           attrs: { index: index, task: task },
           on: {
             "update:title": _vm.onUpdate,
@@ -15277,15 +15278,6 @@ if (false) {
 
 /***/ }),
 /* 50 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19004,6 +18996,12 @@ Sortable.mount(Remove, Revert);
 /* harmony default export */ __webpack_exports__["a"] = (Sortable);
 
 
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
